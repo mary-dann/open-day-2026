@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: 'Montserrat', sans-serif;
+  --color-heading: #C7D6E3;      /* Серый  */
+  --color-primary: #0072BC;      /* Синий  */
+  --color-blue: #009FE3;         /* Голубой  */
+  --color-red: #E31E24;          /* Красный  */
+  --color-accent: #00ADA4;       /* Бирюзовый  */
+
+}
+
+@layer base {
+  body {
+    @apply font-sans text-gray-800 antialiased m-0 p-0 w-full overflow-x-hidden;
+  }
+}
+
+@import "./blocks/header.css";
+@import "./blocks/hero.css";
+@import "./blocks/features.css";
+@import "./blocks/programs.css";
+@import "./blocks/excursions.css";
+

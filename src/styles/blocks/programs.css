@@ -1,0 +1,45 @@
+@layer components {
+  .programs {
+    @apply py-16 px-4 bg-white;
+  }
+
+  .programs__container {
+    @apply max-w-[1280px] mx-auto relative;
+  }
+
+  .programs__title {
+    @apply text-2xl md:text-3xl lg:text-6xl font-black text-primary uppercase tracking-wide mb-8 text-center;
+  }
+
+  .programs__content-wrapper {
+    @apply flex flex-col lg:flex-row items-start gap-0 relative;
+  }
+
+
+  .programs__image-wrapper {
+    @apply w-full w-[50%] relative flex justify-center lg:justify-start;
+
+  }
+
+  .programs__image {
+    @apply w-full max-w-[700px] h-auto object-contain object-bottom;
+  }
+
+  .programs__list-wrapper {
+    @apply w-full lg:flex lg:mr-0;
+    @apply border-5 border-blue rounded-[2rem] p-6 md:p-10 bg-white shadow-sm;  
+  }
+
+  .programs__list {
+    @apply list-none p-0 m-0 flex flex-col gap-4;
+  }
+
+  .programs__item {
+    @apply relative pl-8 text-sm md:text-2xl font-bold text-black leading-snug;
+  }
+
+  .programs__item::before {
+    content: '';
+    @apply absolute left-0 top-2 w-4 h-4 rounded-full bg-accent;
+  }
+}

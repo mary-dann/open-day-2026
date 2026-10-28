@@ -5,8 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>День открытых дверей — РГАТУ</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold text-blue-600">Проверка</h1>
+
+  <body class="bg-gray-50">
+    <header class="header">
+      <div class="header__top-bar">
+        <p class="header__slogan">Здесь начинается твоя профессия!</p>
+      </div>
+      <div class="header__container">
+        <!-- добавить логотип и меню -->
+      </div>
+    </header> 
+      <section class="hero" id="hero">
+        <div class="hero__banner relative">  
+
+          <div class="hero__left">
+            <img src="/src/images/logos/rgatu-logo.svg" alt="РГАТУ" class="hero__logo" />
+          </div>
+
+          <div class="hero__right">
+            <div class="hero__time-box">
+              <time datetime="2026-11-15T12:00">в 12.00</time>
+            </div>
+            <div class="hero__date">
+              <span class="hero__date-day">15</span>
+              <span class="hero__date-month">ноября</span>
+            </div>
+            <address class="hero__address">
+              г. Рыбинск,<br>
+              Первый учебный корпус,<br>
+              ул. Плеханова, д. 2
+            </address>
+          </div>
+
+          <div class="hero__red-box-wrapper">
+            <div class="hero__site-link">
+                <a href="https://rsatu.ru" target="_blank" rel="noopener">rsatu.ru</a>
+              </div>
+            <div class="hero__red-box">
+              
+              <div class="hero__red-box-content">
+                <h1 class="hero__title">Приглашаем</h1>
+                <p class="hero__subtitle">на день открытых дверей</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="features__container">
+          <article class="features__card">
+            <h2 class="features__title">Познакомься с будущими работодателями</h2>
+            <p class="features__text">
+              Представители ведущих предприятий отрасли ответят на вопросы о профессии, зарплатах, рынке труда и карьерном росте.
+            </p>
+          </article>
+
+          <article class="features__card">
+            <h2 class="features__title">Получи индивидуальную консультацию</h2>
+            <p class="features__text">
+              Расскажем про проходные баллы ЕГЭ, количество бюджетных мест, целевое обучение. Поможем понять полный путь от ЕГЭ до поступления в вуз.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="programs" id="programs">
+        <div class="programs__container">
+          
+          <h2 class="programs__title">Образовательные программы:</h2>
+
+          <div class="programs__content-wrapper">
+            
+            <div class="programs__image-wrapper">
+              <img src="/src/images/photos/students-pdf.png" alt="Студенты РГАТУ" class="programs__image" />
+            </div>
+
+            <div class="programs__list-wrapper">
+              <ul class="programs__list">
+                <li class="programs__item">Авиационные и ракетные двигатели</li>
+                <li class="programs__item">Информатика, программирование и искусственный интеллект</li>
+                <li class="programs__item">Радиоэлектроника и беспилотные системы</li>
+                <li class="programs__item">Инновационное машиностроение</li>
+                <li class="programs__item">Передовые производственные технологии и промышленная автоматизация</li>
+                <li class="programs__item">Инженерная физика, компьютерное моделирование и цифровые двойники</li>
+                <li class="programs__item">Теплоэнергетика и электроэнергетика</li>
+                <li class="programs__item">Новые материалы и аддитивные технологии</li>
+                <li class="programs__item">Управление качеством</li>
+                <li class="programs__item">Экономика и менеджмент</li>
+                <li class="programs__item">Развитие городских сервисов и управление проектами</li>
+                <li class="programs__item">Педагогическое образование физико-математического профиля</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
