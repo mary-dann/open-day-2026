@@ -6,15 +6,34 @@
     <title>День открытых дверей — РГАТУ</title>
   </head>
 
+  
   <body class="bg-gray-50">
-    <header class="header">
+        <!-- Шапка -->
+    <header class="header">      
+      <div class="header__container">        
+        <a href="https://rsatu.ru" target="_blank" class="header__logo-link">
+           <img src="/src/images/logos/rgatu-logo.svg" alt="РГАТУ" class="header__logo-img" />
+        </a>
+        <nav class="header__nav" aria-label="Основное меню">
+          <ul class="header__menu">
+            <li><a href="#programs" class="header__menu-link">Программы</a></li>
+            <li><a href="#reasons" class="header__menu-link">Почему РГАТУ</a></li>
+            <li><a href="#contacts" class="header__menu-link">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="hidden md:block"></div>
+                
+      </div>
+    </header> 
+
+    <!-- слоган -->
       <div class="header__top-bar">
         <p class="header__slogan">Здесь начинается твоя профессия!</p>
       </div>
-      <div class="header__container">
-        <!-- добавить логотип и меню -->
-      </div>
-    </header> 
+    <main>
+
+
+
       <section class="hero" id="hero">
         <div class="hero__banner relative">  
 
@@ -40,9 +59,8 @@
           <div class="hero__red-box-wrapper">
             <div class="hero__site-link">
                 <a href="https://rsatu.ru" target="_blank" rel="noopener">rsatu.ru</a>
-              </div>
+            </div>
             <div class="hero__red-box">
-              
               <div class="hero__red-box-content">
                 <h1 class="hero__title">Приглашаем</h1>
                 <p class="hero__subtitle">на день открытых дверей</p>
@@ -53,6 +71,7 @@
         </div>
       </section>
 
+      <!-- Два преимущества -->
       <section class="features" id="features">
         <div class="features__container">
           <article class="features__card">
@@ -71,6 +90,7 @@
         </div>
       </section>
 
+      <!-- Образовательные программы -->
       <section class="programs" id="programs">
         <div class="programs__container">
           
@@ -101,9 +121,153 @@
 
           </div>
         </div>
+      </section>      
+      
+      <!-- Экскурсии -->
+      <section class="excursions" id="excursions">
+        <div class="excursions__container">
+          
+          <div class="excursions__text-block">
+            <div class="excursions__icon">рукопожатие</div>
+            <h2 class="excursions__title">Приглашаем на экскурсии и образовательные интенсивы для школьников и педагогов</h2>
+          </div>
+
+          <div class="excursions__red-shape">
+            <div class="excursions__red-content">
+              
+              <div class="excursions__qr">
+                <img src="/src/images/qr/qr-programs.png" alt="QR-код" />
+              </div>
+
+              <div class="excursions__red-text">
+                Все образовательные
+                <span>Программы<br>РГАТУ</span>
+                имени П.А. Соловьева
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Контакты -->
+          <div class="excursions__contact-block">
+            <p class="excursions__contact-title">Директор Центра инженерной физико-математической подготовки педагогов и наставников «Ресурс»</p>
+            <p class="excursions__contact-name">Елена Попкова</p>
+            
+            <div class="excursions__contact-links">
+              <a href="mailto:resurs@rsatu.ru" class="excursions__link excursions__link--email">
+                ✉ resurs@rsatu.ru
+              </a>
+              <a href="tel:+79201228638" class="excursions__link excursions__link--phone">
+                телефон +7 920 122 8638
+              </a>
+            </div>
+          </div>
+
+        </div>
       </section>
 
-    
+      
+      <section class="reasons" id="reasons">
+
+        <div class="reasons__container">
+          <h2 class="reasons__main-title">4 причины выбрать РГАТУ</h2>
+
+          <!-- ПРИЧИНА 1 -->
+          <article class="reasons__block reasons__block--partners">
+            <div class="reasons__partners-box">
+              <div class="reasons__partners-title">
+                Кооперированное<br>образование
+              </div>
+              <div class="reasons__partners-logos">
+                <img src="/src/images/logos/rostec.svg" alt="Ростех" class="reasons__logo-img" />
+                <img src="/src/images/logos/odk.svg" alt="ОДК" class="reasons__logo-img" />
+                <img src="/src/images/logos/odk-saturn.svg" alt="ОДК-Сатурн" class="reasons__logo-img" />
+                <img src="/src/images/logos/pish-horizontal.svg" alt="Передовые инженерные школы" class="reasons__logo-img" />
+                <img src="/src/images/logos/npc-bas-yao.svg" alt="НПЦ БАС ЯО" class="reasons__logo-img" />
+                <img src="/src/images/logos/sberbank.png" alt="Сбер" class="reasons__logo-img" />
+                <img src="/src/images/logos/vtb.svg" alt="ВТБ" class="reasons__logo-img" />
+                <img src="/src/images/logos/sberenergo-development-raster.png" alt="Сберэнерго Девелопмент" class="reasons__logo-img" />
+                <img src="/src/images/logos/gerb-rybinsk.svg" alt="Герб Рыбинска" class="reasons__logo-img" />
+                <img src="/src/images/logos/npo-krista.svg" alt="НПО Криста" class="reasons__logo-img" />
+                <img src="/src/images/logos/luch.svg" alt="Луч" class="reasons__logo-img" />
+                <img src="/src/images/logos/rzp.svg" alt="Рыбинский завод приборостроения" class="reasons__logo-img" />
+                <img src="/src/images/logos/russkaya-mekhanika.svg" alt="Русская механика" class="reasons__logo-img" />
+              </div>
+            </div>
+
+            <div class="reasons__fullwidth-text-box">
+              <div class="reasons__fullwidth-inner">
+                <div class="reasons__number static-number">1</div>
+                <p class="reasons__partners-text">
+                  Тесная связь университета с промышленными предприятиями и ИТ-компаниями Ярославской области и других регионов России — студенты получают реальный опыт работы и возможность начать карьеру с первого курса.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- ПРИЧИНА 2 -->
+          <article class="reasons__block reasons__block--lab">
+
+            <div class="reasons__campus-bg">
+              <img src="/src/images/photos/mercury.png" alt="Кампус Меркурий" class="reasons__campus-img" loading="lazy" />
+            </div>
+
+            <div class="reasons__number reasons__number--bg">2</div>
+
+            <div class="reasons__lab-plate">
+              <div class="reasons__lab-title">Лаборатории передовой<br>инженерной школы</div>
+              <img src="/src/images/logos/pish-vertical.svg" alt="Передовые инженерные школы" class="reasons__lab-logo" />
+            </div>
+
+            <div class="reasons__lab-photo">
+              <img src="/src/images/photos/drone-student-pdf.jpg" alt="Студент с дроном" class="reasons__photo-img" loading="lazy" />
+            </div>
+
+            <p class="reasons__text reasons__text--lab">
+              Работа над конкретными проектами с наставниками передовой инженерной школы «Технологии двигателестроения», лаборатории которой оснащены новейшим оборудованием.
+            </p>
+          </article>
+
+          <!-- ПРИЧИНА 3 -->
+          <article class="reasons__block reasons__block--comfort">
+            <div class="reasons__number reasons__number--bg reasons__number--comfort">3</div>
+
+            <div class="reasons__comfort-content">
+              <div class="reasons__comfort-plate">Комфортные условия для жизни</div>
+              
+              <div class="reasons__photos-grid">
+                <img src="/src/images/photos/dorm-room-pdf.jpg" alt="Комната" class="reasons__photo-img" loading="lazy" />
+                <img src="/src/images/photos/pool-pdf.jpg" alt="Бассейн" class="reasons__photo-img" loading="lazy" />
+                <img src="/src/images/photos/study-room-pdf.jpg" alt="Учебная комната" class="reasons__photo-img" loading="lazy" />
+              </div>
+
+              <p class="reasons__text reasons__text--comfort">
+                Новое общежитие в шаговой доступности от учебных корпусов...
+              </p>
+            </div>
+          </article>
+
+          <!-- ПРИЧИНА 4 -->
+          <article class="reasons__block reasons__block--fin">
+            <div class="reasons__number reasons__number--bg">4</div>
+
+            <div class="reasons__fin-content">
+              <h3 class="reasons__title">Финансовая независимость с первого курса</h3>
+              <div class="reasons__fin-logos">
+                <img src="/src/images/logos/kod-rostecha.svg" alt="Код Ростеха" class="reasons__fin-logo" />
+                <img src="/src/images/logos/krylya-rostecha.svg" alt="Крылья Ростеха" class="reasons__fin-logo" />
+              </div>
+              <p class="reasons__text">
+                Флагманское образование и поощрение за хорошую учебу от индустриального партнера вуза. Максимальная стипендия для успешных участников проектов целевого обучения — около 60 тысяч рублей.
+              </p>
+            </div>
+          </article>
+        </div>
+
+      </section>
+
+      
+      
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

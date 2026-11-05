@@ -1,7 +1,7 @@
 @layer components {
     .header {
-    @apply w-full bg-white shadow-sm relative z-50;
-    }
+    @apply w-full bg-white sticky top-0 z-50 shadow-sm;
+  }
 
     .header__top-bar {
     @apply bg-heading text-white py-2 px-4 text-center;
@@ -11,6 +11,26 @@
     }
 
 
+     /* Контейнер шапки */
+  .header__container {
+    @apply max-w-[1280px] mx-auto px-4 py-3 flex items-center justify-between gap-6;
+  }
 
+  /* Уменьшенный логотип */
+  .header__logo-img {
+    @apply h-8 md:h-10 w-auto object-contain;
+  }
 
+  /* Меню (растянуто вправо) */
+  .header__nav {
+    @apply flex-1 flex justify-end;
+  }
+
+  .header__menu {
+    @apply flex items-center gap-6 md:gap-12 list-none p-0 m-0;
+  }
+
+  .header__menu-link {
+    @apply text-xs md:text-sm font-bold text-gray-800 uppercase hover:text-primary transition-colors outline-none focus-visible:ring-2 focus-visible:ring-primary rounded px-2 py-1 whitespace-nowrap;
+  }
 }

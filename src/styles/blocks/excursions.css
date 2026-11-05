@@ -1,0 +1,82 @@
+@layer components {
+  .excursions {
+    @apply py-12 px-4 bg-gray-100;
+  }
+
+  .excursions__container {
+    @apply max-w-[1280px] mx-auto bg-white shadow-xl flex flex-col lg:flex-row items-stretch relative overflow-hidden;
+     @apply p-4 lg:p-6
+  }
+
+  .excursions__text-block {
+    @apply w-full lg:w-[25%] p-6 md:p-8 flex flex-col justify-center items-start relative z-10;
+  }
+
+  .excursions__title {
+    @apply text-grayText font-bold text-base md:text-lg uppercase leading-tight mb-4;
+  }
+
+  .excursions__icon {
+    @apply w-10 h-10 rounded-full bg-blue-100 text-grayText flex items-center justify-center text-xl mb-4 shrink-0;
+  }
+
+
+  .excursions__red-shape {
+    @apply bg-red text-white w-full lg:w-[45%] relative z-20;
+    
+    @apply lg:-ml-12; /* Наезжаем на левую часть */
+    transform: skewX(-25deg); 
+  }
+
+  .excursions__red-content {
+    @apply flex flex-row items-center justify-center gap-4 p-6 h-full;
+    transform: skewX(25deg); 
+  }
+
+  .excursions__qr {
+    @apply shrink-0;
+  }
+
+  .excursions__qr img {
+    @apply w-full h-auto object-contain bg-white p-1;
+  }
+
+  /* Текст внутри красной фигуры */
+  .excursions__red-text {
+    @apply text-[10px] md:text-xs font-bold uppercase leading-tight text-left;
+  }
+
+  .excursions__red-text span {
+    @apply block text-base md:text-xl font-black mt-1 mb-1;
+  }
+
+  /* Правая часть с контактами */
+  .excursions__contact-block {
+    @apply w-full lg:w-[40%] p-6 md:p-8 flex flex-col justify-center relative z-10;
+    @apply lg:pl-12; /* Отступ от наклоненной плашки */
+  }
+
+  .excursions__contact-title {
+    @apply text-grayText font-bold text-xs md:text-sm mb-1 leading-tight uppercase;
+  }
+
+  .excursions__contact-name {
+    @apply text-grayText font-black text-xs md:text-sm  mb-4 leading-tight uppercase;
+  }
+
+  .excursions__contact-links {
+    @apply flex flex-wrap gap-3 mt-2;
+  }
+
+  .excursions__link {
+    @apply inline-flex items-center gap-2 text-white font-bold px-4 py-2 rounded-full transition-colors text-sm md:text-base whitespace-nowrap shadow-md;
+  }
+
+  .excursions__link--email {
+    @apply bg-primary hover:bg-blue-800;
+  }
+
+  .excursions__link--phone {
+    @apply bg-red hover:bg-red-700;
+  }
+}
