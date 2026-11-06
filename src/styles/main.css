@@ -5,6 +5,7 @@
   --color-heading: #C7D6E3;      /* Серый  */
   --color-primary: #0072BC;      /* Синий  */
   --color-blue: #009FE3;         /* Голубой  */
+  
   --color-red: #E31E24;          /* Красный  */
   --color-accent: #00ADA4;       /* Бирюзовый  */
   --color-grayText: #7C9AB3;     /* Серый для текста*/
@@ -17,10 +18,13 @@
   }
 }
 
+.icon {
+  @apply inline-block shrink-0;
+} 
+
 @import "./blocks/header.css";
 @import "./blocks/hero.css";
 @import "./blocks/features.css";
 @import "./blocks/programs.css";
 @import "./blocks/excursions.css";
 @import "./blocks/reasons.css";
-

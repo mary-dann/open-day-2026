@@ -3,27 +3,24 @@
     @apply w-full bg-white sticky top-0 z-50 shadow-sm;
   }
 
-    .header__top-bar {
+  .header__top-bar {
     @apply bg-heading text-white py-2 px-4 text-center;
-    }
-    .header__slogan {
-    @apply text-2xl uppercase tracking-[0.2em];
-    }
+  }
+  
+  .header__slogan {
+    @apply text-xs sm:text-sm md:text-2xl uppercase tracking-widest md:tracking-[0.2em] whitespace-nowrap;
+  }
 
-
-     /* Контейнер шапки */
   .header__container {
     @apply max-w-[1280px] mx-auto px-4 py-3 flex items-center justify-between gap-6;
   }
 
-  /* Уменьшенный логотип */
   .header__logo-img {
     @apply h-8 md:h-10 w-auto object-contain;
   }
 
-  /* Меню (растянуто вправо) */
   .header__nav {
-    @apply flex-1 flex justify-end;
+    @apply flex-1 flex justify-center;
   }
 
   .header__menu {

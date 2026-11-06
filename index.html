@@ -50,6 +50,9 @@
               <span class="hero__date-month">ноября</span>
             </div>
             <address class="hero__address">
+              <svg class="icon hero__address-icon" width="24" height="24" aria-hidden="true">
+                <use href="/src/images/icons/icons.svg#icon-map-pin"></use>
+              </svg>
               г. Рыбинск,<br>
               Первый учебный корпус,<br>
               ул. Плеханова, д. 2
@@ -75,14 +78,18 @@
       <section class="features" id="features">
         <div class="features__container">
           <article class="features__card">
-            <h2 class="features__title">Познакомься с будущими работодателями</h2>
+            <h2 class="features__title">
+               <span class="features__title-text">Познакомься с будущими работодателями</span>
+            </h2>
             <p class="features__text">
               Представители ведущих предприятий отрасли ответят на вопросы о профессии, зарплатах, рынке труда и карьерном росте.
             </p>
           </article>
 
           <article class="features__card">
-            <h2 class="features__title">Получи индивидуальную консультацию</h2>
+            <h2 class="features__title">
+              <span class="features__title-text">Получи индивидуальную консультацию</span>
+            </h2>
             <p class="features__text">
               Расскажем про проходные баллы ЕГЭ, количество бюджетных мест, целевое обучение. Поможем понять полный путь от ЕГЭ до поступления в вуз.
             </p>
@@ -99,7 +106,7 @@
           <div class="programs__content-wrapper">
             
             <div class="programs__image-wrapper">
-              <img src="/src/images/photos/students-pdf.png" alt="Студенты РГАТУ" class="programs__image" />
+              <img src="/src/images/photos/students.png" alt="Студенты РГАТУ" class="programs__image" />
             </div>
 
             <div class="programs__list-wrapper">
@@ -128,22 +135,36 @@
         <div class="excursions__container">
           
           <div class="excursions__text-block">
-            <div class="excursions__icon">рукопожатие</div>
-            <h2 class="excursions__title">Приглашаем на экскурсии и образовательные интенсивы для школьников и педагогов</h2>
+             <div class="excursions__text-wrapper">
+                <h2 class="excursions__title">Приглашаем на экскурсии и образовательные интенсивы для школьников и педагогов</h2>
+
+                <div class="excursions__icon">
+                  <!-- <svg class="icon" width="20" height="20" aria-hidden="true">
+                    <use href="/src/images/icons/icons.svg#handshake"></use>
+                    <use href="/src/images/icons/handshake.svg"></use> 
+                  </svg> -->
+                  <img src="/src/images/icons/handshake.svg" alt="" class="excursions__icon-img" aria-hidden="true" />
+                </div>
+             </div>        
+                       
           </div>
+
+
+
 
           <div class="excursions__red-shape">
             <div class="excursions__red-content">
               
+              <!--
               <div class="excursions__qr">
                 <img src="/src/images/qr/qr-programs.png" alt="QR-код" />
-              </div>
+              </div> -->
 
-              <div class="excursions__red-text">
+              <a  href="https://www.rsatu.ru/applicants/programs/" target="_blank" rel="noopener" class="excursions__red-text">
                 Все образовательные
                 <span>Программы<br>РГАТУ</span>
                 имени П.А. Соловьева
-              </div>
+              </a>
 
             </div>
           </div>
@@ -155,10 +176,17 @@
             
             <div class="excursions__contact-links">
               <a href="mailto:resurs@rsatu.ru" class="excursions__link excursions__link--email">
-                ✉ resurs@rsatu.ru
+                <svg class="icon" width="16" height="16" aria-hidden="true">
+                  <use href="/src/images/icons/icons.svg#icon-mail"></use>
+                </svg>
+                resurs@rsatu.ru
               </a>
+
               <a href="tel:+79201228638" class="excursions__link excursions__link--phone">
-                телефон +7 920 122 8638
+                <svg class="icon" width="16" height="16" aria-hidden="true">
+                  <use href="/src/images/icons/icons.svg#icon-phone"></use>
+                </svg>
+                +7 920 122 8638
               </a>
             </div>
           </div>
@@ -223,27 +251,44 @@
               <img src="/src/images/photos/drone-student-pdf.jpg" alt="Студент с дроном" class="reasons__photo-img" loading="lazy" />
             </div>
 
+            
             <p class="reasons__text reasons__text--lab">
               Работа над конкретными проектами с наставниками передовой инженерной школы «Технологии двигателестроения», лаборатории которой оснащены новейшим оборудованием.
             </p>
+           
+          
+
+
+            
           </article>
 
           <!-- ПРИЧИНА 3 -->
-          <article class="reasons__block reasons__block--comfort">
-            <div class="reasons__number reasons__number--bg reasons__number--comfort">3</div>
+          <!--
+          <div class="reasons__room-photo">
+            <img src="/src/images/photos/dorm-room-pdf.jpg" alt="Комната" class="reasons__photo-img" loading="lazy" />
+          </div>
+        -->
+          <article class="reasons__block reasons__block--comfort">             
 
             <div class="reasons__comfort-content">
-              <div class="reasons__comfort-plate">Комфортные условия для жизни</div>
-              
-              <div class="reasons__photos-grid">
-                <img src="/src/images/photos/dorm-room-pdf.jpg" alt="Комната" class="reasons__photo-img" loading="lazy" />
-                <img src="/src/images/photos/pool-pdf.jpg" alt="Бассейн" class="reasons__photo-img" loading="lazy" />
-                <img src="/src/images/photos/study-room-pdf.jpg" alt="Учебная комната" class="reasons__photo-img" loading="lazy" />
-              </div>
+              <div class="reasons__comfort-plate">Комфортные<br>условия<br>для жизни</div>             
+             
+              <div class="reasons__comfort-text-box">
+                <div class="reasons__comfort-text-inner">                  
+                  <div class="reasons__photos-grid">
+                    <img src="/src/images/photos/pool-pdf.jpg" alt="Бассейн" class="reasons__photo-img" loading="lazy" />
+                    <img src="/src/images/photos/study-room-pdf.jpg" alt="Учебная комната" class="reasons__photo-img" loading="lazy" />
+                  </div>
+                  
+                  <div class="reasons__number reasons__number--bg reasons__number--comfort">3</div>
 
-              <p class="reasons__text reasons__text--comfort">
-                Новое общежитие в шаговой доступности от учебных корпусов...
-              </p>
+                  <p class="reasons__text reasons__text--comfort">
+                    Новое общежитие в шаговой доступности от учебных корпусов, а скоро - кампус мирового уровня "Меркурий" с физкультурно-оздоровительным комплексом и общежитием
+                    <span>на 1200 мест.</span>
+                    <br>Расположение в центре Рыбинска, где есть всё для учебы, досуга и отдыха.
+                  </p>
+                </div>
+              </div>
             </div>
           </article>
 

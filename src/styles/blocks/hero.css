@@ -1,12 +1,14 @@
 @layer components {
   .hero {
-    @apply w-full relative overflow-hidden bg-white pb-12 md:pb-0;
+    @apply w-full relative overflow-hidden bg-white pb-12 md:pb-15;
   }
   .hero__banner {
-    @apply w-full max-w-[1920px] mx-auto relative flex flex-col md:flex-row items-stretch;
+    @apply w-full max-w-[1280px] mx-auto relative flex flex-col md:flex-row items-stretch;
   }
   .hero__left {
     @apply w-full md:w-[50%] bg-white relative flex flex-col justify-start items-center pt-10 md:pt-16 pb-8 px-6 md:px-10 lg:px-16 z-20;
+
+    
     @media (min-width: 768px) {
       clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
       margin-right: -5%; 
@@ -14,23 +16,26 @@
   }
   .hero__logo {
     @apply h-24 md:h-40 w-auto object-contain mb-8 md:mb-12 mx-auto;
-  }
+    @apply hidden md:block; 
+  }  
   .hero__right {
-    @apply w-full md:w-[60%] bg-primary text-white py-10 px-6 md:py-16 md:pl-20 md:pr-12 flex flex-col justify-center relative z-10;
+    @apply w-full md:w-[60%] bg-primary text-white py-10 px-6 md:py-16 md:pl-20 md:pr-12 flex flex-col justify-center relative z-10 order-2 md:order-none;
+
     @media (min-width: 768px) {
-      clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+      clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
       margin-left: -5%;
       padding-left: 15%;
     }
   }
   .hero__time-box {
-    @apply inline-block bg-white text-primary px-4 py-1.5 md:px-6 md:py-2 text-xl md:text-3xl lg:text-4xl font-bold mb-6 w-max self-end rounded-lg shadow-sm;
+    @apply inline-block bg-white text-primary px-4 py-1.5 md:px-3 md:py-2 text-xl md:text-3xl lg:text-4xl  mb-6 w-max self-center rounded-lg shadow-sm;
   }
   .hero__date {
+    
     @apply text-6xl md:text-8xl lg:text-9xl font-black leading-none mb-6 flex flex-col md:flex-row items-baseline gap-2 md:gap-4;
   }
   .hero__date-day {
-    @apply leading-[0.8];
+    @apply leading-[0.7];
   }
   .hero__date-month {
     @apply text-4xl md:text-6xl lg:text-7xl font-normal lowercase;
@@ -38,18 +43,17 @@
   .hero__address {
     @apply text-base md:text-xl lg:text-2xl not-italic flex items-start gap-2 mt-4 max-w-md leading-snug font-medium;
   }
-  .hero__address::before {
-    content: '(*)';
-    @apply text-xl md:text-3xl shrink-0;
-  }
+
   .hero__button {
     @apply mt-8 md:mt-10 inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-bold text-primary bg-white rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg w-max;
   }
   .hero__red-box-wrapper {
-    @apply w-full mt-8 md:mt-0 relative z-30 px-6 md:px-0 md:w-[45%] md:absolute md:bottom-10 md:left-16;
+    @apply w-full mt-8 md:mt-0 relative z-30 px-6 md:px-0 md:w-[45%] md:absolute md:bottom-10 md:left-16 order-1 md:order-none;
+  
   }
   .hero__red-box {
     @apply bg-red text-white p-6 md:py-8 md:pl-10 md:pr-16 relative w-full shadow-2xl rounded-r-2xl md:rounded-none;
+
     @media (min-width: 768px) {
       clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
     }
@@ -65,7 +69,7 @@
     @apply no-underline hover:text-primary transition-colors block;
   }
   .hero__title {
-    @apply text-3xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-none mb-2 mt-4;
+    @apply text-lg md:text-4xl lg:text-3xl font-black uppercase tracking-tight leading-none mb-2 mt-4;
   }
   .hero__subtitle {
     @apply text-sm md:text-lg font-bold uppercase tracking-wider;

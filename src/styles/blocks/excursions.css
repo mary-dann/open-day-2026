@@ -1,49 +1,56 @@
 @layer components {
   .excursions {
-    @apply py-12 px-4 bg-gray-100;
+    @apply px-4 bg-gray-100;
   }
 
   .excursions__container {
-    @apply max-w-[1280px] mx-auto bg-white shadow-xl flex flex-col lg:flex-row items-stretch relative overflow-hidden;
-     @apply p-4 lg:p-6
+    @apply mx-auto bg-white shadow-xl flex flex-col lg:flex-row items-stretch relative overflow-hidden gap-16;
+    @apply p-2 lg:p-2
   }
 
   .excursions__text-block {
-    @apply w-full lg:w-[25%] p-6 md:p-8 flex flex-col justify-center items-start relative z-10;
+    @apply w-full lg:w-[35%] p-4 md:p-5 flex flex-col justify-center items-start relative z-10;
   }
 
   .excursions__title {
-    @apply text-grayText font-bold text-base md:text-lg uppercase leading-tight mb-4;
+    @apply text-grayText text-base md:text-2xl uppercase leading-tight mb-4;
+  }
+
+  .excursions__text-wrapper {
+    @apply flex gap-2 md:gap-2;
   }
 
   .excursions__icon {
-    @apply w-10 h-10 rounded-full bg-blue-100 text-grayText flex items-center justify-center text-xl mb-4 shrink-0;
+    @apply w-10 h-10 md:w-12 md:h-12 rounded-full bg-grayText/90 text-grayText flex items-center justify-center shrink-0;
+  }
+
+  .excursions__icon-img {
+    @apply w-6 h-6 md:w-8 md:h-8 object-contain;
   }
 
 
   .excursions__red-shape {
-    @apply bg-red text-white w-full lg:w-[45%] relative z-20;
-    
-    @apply lg:-ml-12; /* Наезжаем на левую часть */
-    transform: skewX(-25deg); 
+    @apply w-[90%] mx-auto max-h-[250px] bg-red text-white relative z-20 block cursor-pointer transition-transform duration-300; 
+    @apply lg:w-[30%] lg:mx-0 lg:max-h-none lg:self-center lg:-ml-12; 
+    transform: skewX(-10deg);   
+  }
+
+  .excursions__red-shape:hover {
+    @apply bg-red-700; 
+  }
+
+  .excursions__red-shape:focus-visible {
+    @apply outline-4 outline-offset-4 outline-accent;
   }
 
   .excursions__red-content {
-    @apply flex flex-row items-center justify-center gap-4 p-6 h-full;
-    transform: skewX(25deg); 
+    @apply flex flex-row items-center justify-center gap-2 p-6 h-full;
+    transform: skewX(10deg); 
   }
 
-  .excursions__qr {
-    @apply shrink-0;
-  }
 
-  .excursions__qr img {
-    @apply w-full h-auto object-contain bg-white p-1;
-  }
-
-  /* Текст внутри красной фигуры */
   .excursions__red-text {
-    @apply text-[10px] md:text-xs font-bold uppercase leading-tight text-left;
+    @apply text-[10px] md:text-xl uppercase leading-tight text-left max-w-[200px] lg:max-w-[250px];
   }
 
   .excursions__red-text span {
@@ -57,11 +64,11 @@
   }
 
   .excursions__contact-title {
-    @apply text-grayText font-bold text-xs md:text-sm mb-1 leading-tight uppercase;
+    @apply text-grayText text-xs md:text-lg mb-1 leading-tight uppercase;
   }
 
   .excursions__contact-name {
-    @apply text-grayText font-black text-xs md:text-sm  mb-4 leading-tight uppercase;
+    @apply text-grayText font-bold text-xs md:text-xl  mb-4 leading-tight uppercase;
   }
 
   .excursions__contact-links {
@@ -79,4 +86,7 @@
   .excursions__link--phone {
     @apply bg-red hover:bg-red-700;
   }
+
+
+
 }
