@@ -21,7 +21,7 @@
   }
 
   .programs__image {
-    @apply w-full max-w-[150px] mx-auto aspect-square object-cover object-top rounded-full;    
+    @apply w-full max-w-[150px] mx-auto aspect-square object-cover object-top rounded-full;
     @apply md:max-w-[500px] md:aspect-auto md:rounded-2xl md:mx-0;
   }
 

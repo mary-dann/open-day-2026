@@ -1,0 +1,69 @@
+@layer components {
+  .contacts {
+    @apply py-16 px-4 bg-white;
+  }
+
+  .contacts__container {
+    @apply max-w-[1280px] mx-auto flex flex-col md:flex-row items-center justify-between gap-8 relative;
+  }
+
+  .contacts__card {
+    @apply bg-white rounded-[2rem] p-6 md:p-10 shadow-2xl relative z-10 w-full md:w-[60%];
+    
+    @apply md:rounded-l-[3rem] md:rounded-r-none; 
+  }
+
+  .contacts__title {
+    @apply text-2xl md:text-4xl font-black text-red uppercase leading-tight mb-6;
+  }
+
+  .contacts__role {
+    @apply text-xs md:text-sm font-bold text-grayText uppercase mb-1;
+  }
+
+  .contacts__name {
+    @apply text-lg md:text-xl font-black text-grayText mb-4;
+  }
+
+  .contacts__address {
+    @apply not-italic text-sm md:text-base text-grayText mb-4 flex items-start gap-2;
+  }
+
+  .contacts__links {
+    @apply flex flex-wrap gap-3;
+  }
+
+  .contacts__link {
+    @apply inline-flex items-center gap-2 text-white font-bold px-4 py-2 rounded-full text-sm md:text-base shadow-md transition-colors;
+  }
+
+  .contacts__link--email {
+    @apply bg-blue hover:bg-primary; 
+  }
+
+  .contacts__link--phone {
+    @apply bg-red hover:bg-red; 
+  }
+
+  .contacts__socials {
+    @apply flex flex-row md:flex-col gap-4 w-full md:w-[30%] justify-center;
+  }
+
+  .contacts__social-btn {
+    @apply flex items-center justify-center gap-2 bg-white text-gray-800 font-bold px-6 py-3 rounded-xl shadow-lg border-2 border-transparent transition-all hover:-translate-y-1 hover:shadow-xl;
+    @apply w-full;
+  }
+
+  .contacts__social-btn--max {
+    @apply hover:border-blue;
+  }
+
+  .contacts__social-btn--vk {
+    @apply hover:border-primary;
+  }
+
+  .contacts__social-icon {
+    @apply w-6 h-6 flex items-center justify-center font-black rounded-full text-white text-xs;
+  }
+
+}

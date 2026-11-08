@@ -33,7 +33,6 @@
     <main>
 
 
-
       <section class="hero" id="hero">
         <div class="hero__banner relative">  
 
@@ -42,21 +41,27 @@
           </div>
 
           <div class="hero__right">
-            <div class="hero__time-box">
-              <time datetime="2026-11-15T12:00">в 12.00</time>
+             <div class="hero__right-content">
+
+              
+              <div class="hero__time-box">
+                <time datetime="2026-11-15T12:00">в 12.00</time>
+              </div>
+              <div class="hero__date">
+                <span class="hero__date-day">15</span>
+                <span class="hero__date-month">ноября</span>
+              </div>
+              <address class="hero__address">
+                <svg class="icon hero__address-icon" width="24" height="24" aria-hidden="true">
+                  <use href="/src/images/icons/icons.svg#icon-map-pin"></use>
+                </svg>
+                <a href="https://yandex.ru/maps/?text=Рыбинск,+ул.+Плеханова,+д.+2" target="_blank" rel="noopener" class="hero__address-link">
+                  г. Рыбинск,<br>
+                  Первый учебный корпус,<br>
+                  ул. Плеханова, д. 2
+                </a>
+              </address>
             </div>
-            <div class="hero__date">
-              <span class="hero__date-day">15</span>
-              <span class="hero__date-month">ноября</span>
-            </div>
-            <address class="hero__address">
-              <svg class="icon hero__address-icon" width="24" height="24" aria-hidden="true">
-                <use href="/src/images/icons/icons.svg#icon-map-pin"></use>
-              </svg>
-              г. Рыбинск,<br>
-              Первый учебный корпус,<br>
-              ул. Плеханова, д. 2
-            </address>
           </div>
 
           <div class="hero__red-box-wrapper">
@@ -240,7 +245,7 @@
               <img src="/src/images/photos/mercury.png" alt="Кампус Меркурий" class="reasons__campus-img" loading="lazy" />
             </div>
 
-            <div class="reasons__number reasons__number--bg">2</div>
+            <div class="reasons__number reasons__number--lab">2</div>
 
             <div class="reasons__lab-plate">
               <div class="reasons__lab-title">Лаборатории передовой<br>инженерной школы</div>
@@ -254,63 +259,149 @@
             
             <p class="reasons__text reasons__text--lab">
               Работа над конкретными проектами с наставниками передовой инженерной школы «Технологии двигателестроения», лаборатории которой оснащены новейшим оборудованием.
-            </p>
-           
-          
-
-
+            </p>                    
             
           </article>
 
+
+
           <!-- ПРИЧИНА 3 -->
-          <!--
-          <div class="reasons__room-photo">
-            <img src="/src/images/photos/dorm-room-pdf.jpg" alt="Комната" class="reasons__photo-img" loading="lazy" />
-          </div>
-        -->
-          <article class="reasons__block reasons__block--comfort">             
+          <article class="reasons__block reasons__block--comfort">
+            
+            <div class="reasons__room-photo">
+              <img src="/src/images/photos/dorm-room-pdf.jpg" alt="Комната" class="reasons__photo-img" loading="lazy" />
+            </div>
 
             <div class="reasons__comfort-content">
-              <div class="reasons__comfort-plate">Комфортные<br>условия<br>для жизни</div>             
-             
+              <div class="reasons__comfort-plate">Комфортные<br>условия<br>для жизни</div>
+              
               <div class="reasons__comfort-text-box">
+                
+                <div class="reasons__photos-grid">
+                  <img src="/src/images/photos/pool-pdf.jpg" alt="Бассейн" class="reasons__photo-img" loading="lazy" />
+                  <img src="/src/images/photos/study-room-pdf.jpg" alt="Учебная комната" class="reasons__photo-img" loading="lazy" />
+                </div>
+                
                 <div class="reasons__comfort-text-inner">                  
-                  <div class="reasons__photos-grid">
-                    <img src="/src/images/photos/pool-pdf.jpg" alt="Бассейн" class="reasons__photo-img" loading="lazy" />
-                    <img src="/src/images/photos/study-room-pdf.jpg" alt="Учебная комната" class="reasons__photo-img" loading="lazy" />
-                  </div>
-                  
-                  <div class="reasons__number reasons__number--bg reasons__number--comfort">3</div>
-
+                  <div class="reasons__number reasons__number--comfort">3</div>
                   <p class="reasons__text reasons__text--comfort">
-                    Новое общежитие в шаговой доступности от учебных корпусов, а скоро - кампус мирового уровня "Меркурий" с физкультурно-оздоровительным комплексом и общежитием
+                    Новое общежитие в шаговой доступности<br>от учебных корпусов, а скоро -<br>кампус мирового уровня "Меркурий"<br>с физкультурно-оздоровительным<br>комплексом и общежитием
                     <span>на 1200 мест.</span>
-                    <br>Расположение в центре Рыбинска, где есть всё для учебы, досуга и отдыха.
+                    <br>Расположение в центре Рыбинска,<br>где есть всё для учебы, досуга и отдыха.
                   </p>
                 </div>
+
               </div>
             </div>
           </article>
 
           <!-- ПРИЧИНА 4 -->
           <article class="reasons__block reasons__block--fin">
-            <div class="reasons__number reasons__number--bg">4</div>
+            <div class="reasons__number reasons__number--bg reasons__number--fin">4</div>
 
-            <div class="reasons__fin-content">
-              <h3 class="reasons__title">Финансовая независимость с первого курса</h3>
+            <div class="reasons__fin-plate">
+              <h3 class="reasons__title">Финансовая независимость<br>с первого курса</h3>
+              
               <div class="reasons__fin-logos">
                 <img src="/src/images/logos/kod-rostecha.svg" alt="Код Ростеха" class="reasons__fin-logo" />
                 <img src="/src/images/logos/krylya-rostecha.svg" alt="Крылья Ростеха" class="reasons__fin-logo" />
               </div>
-              <p class="reasons__text">
-                Флагманское образование и поощрение за хорошую учебу от индустриального партнера вуза. Максимальная стипендия для успешных участников проектов целевого обучения — около 60 тысяч рублей.
-              </p>
+
             </div>
+            <p class="reasons__text reasons__text--fin">
+              Флагманское образование и поощрение за хорошую учебу от индустриального партнера вуза. Максимальная стипендия для успешных участников проектов целевого обучения — <span>около 60 тысяч рублей.</span>
+            </p>
           </article>
+        </div>
+      </section>
+
+
+      <section class="contacts" id="contacts">
+        <div class="contacts__container">
+          
+          <div class="contacts__info">
+            <h2 class="contacts__title">Приходи на экскурсии<br>и убедись сам!</h2>
+            
+           
+            
+            <div class="contacts__person">
+              <p class="contacts__role">Директор центра по работе с абитуриентами «УниверСтарт»</p>
+              <p class="contacts__name">Алиса Гагарина</p>
+            </div>
+
+            <div class="contacts__address">
+              <a href="https://yandex.ru/maps/?text=Рыбинск,+ул.+Пушкина,+д.+53" target="_blank" rel="noopener" class="contacts__map-btn">
+                <svg class="icon" width="16" height="16" aria-hidden="true"><use href="/src/images/icons/icons.svg#icon-map-pin"></use></svg>
+                г. Рыбинск,<br>ул. Пушкина, д. 53
+              </a>
+            </div>
+            
+            <div class="contacts__links">
+              <a href="mailto:gagarina_ai@rsatu.ru" class="contacts__link contacts__link--email">
+                <svg class="icon" width="16" height="16" aria-hidden="true"><use href="/src/images/icons/icons.svg#icon-mail"></use></svg>
+                gagarina_ai@rsatu.ru
+              </a>
+              <a href="tel:+74855239760" class="contacts__link contacts__link--phone">
+                <svg class="icon" width="16" height="16" aria-hidden="true"><use href="/src/images/icons/icons.svg#icon-phone"></use></svg>
+                +7 (4855) 23-97-60
+              </a>
+            </div>
+          </div>
+
+
+
+
+          <div class="contacts__form-wrapper">
+            <h3 class="contacts__form-title">Записаться на день открытых дверей</h3>
+            
+            <div class="contacts__form-placeholder">
+              <p> (будет форма записи) </p>
+            </div>
+          </div>
+
         </div>
 
       </section>
 
+
+      <footer class="footer">
+        <div class="footer__container">
+          
+          <div class="footer__copyright">
+            <p>© 2026 Рыбинский государственный авиационный технический университет имени П. А. Соловьёва</p>
+          </div>
+
+          <div class="footer__socials">
+            <p class="footer__socials-title">МЫ В СОЦСЕТЯХ</p>
+            <div class="footer__socials-list">
+              
+              <a href="https://vk.ru/ryb_rsatu//" target="_blank" rel="noopener" class="footer__social-link footer__social-link--vk" aria-label="ВКонтакте">
+                <img src="/src/images/icons/vk.png" alt="ВКонтакте" class="footer__social-img" />
+              </a>
+              
+              <a href="https://max.ru/id7610029476_biz" target="_blank" rel="noopener" class="footer__social-link footer__social-link--max" aria-label="Макс">
+                <img src="/src/images/icons/max.png" alt="Макс" class="footer__social-img" />
+              </a>
+
+            </div>
+          </div>
+          <div class="footer__links">
+            <a href="https://www.rsatu.ru/sveden/document/" target="_blank" rel="noopener" class="footer__link footer__link--underline">
+              Политика обработки персональных данных
+            </a>
+            <a href="https://www.rsatu.ru/applicants/programs/" target="_blank" rel="noopener" class="footer__link footer__link--underline">
+              Все программы РГАТУ
+            </a>
+          </div>
+
+        </div>
+
+      <button type="button" class="footer__up" id="scrollTopBtn" aria-label="Наверх">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+      </button>
+      </footer>
       
       
     <script type="module" src="/src/main.js"></script>

@@ -2,20 +2,23 @@
   .features {
     @apply py-8 px-4 bg-white relative z-30 -mt-13; 
   }
+  
   .features__container {
     @apply max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10;
   }
+
   .features__card {
     @apply flex flex-col items-start;
   }
+
     .features__title {
     @apply md:-mt-14 relative z-30 md:bg-white font-bold text-sm md:text-base uppercase tracking-wide md:border-2 md:border-primary rounded-full px-6 py-2 mb-4 inline-block leading-tight;
   }
 
   .features__title-text {
-    /* Градиент только к тексту */
     @apply bg-gradient-to-r from-blue to-primary bg-clip-text text-transparent;
   }
+
   .features__text {
     @apply text-gray-800 font-bold text-base md:text-lg leading-snug;
   }

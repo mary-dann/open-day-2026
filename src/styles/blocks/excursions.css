@@ -1,15 +1,22 @@
 @layer components {
   .excursions {
-    @apply px-4 bg-gray-100;
+    @apply px-4 bg-gray1;
   }
 
   .excursions__container {
-    @apply mx-auto bg-white shadow-xl flex flex-col lg:flex-row items-stretch relative overflow-hidden gap-16;
-    @apply p-2 lg:p-2
+    @apply max-w-[1280px] mx-auto bg-white shadow-xl flex flex-col lg:flex-row items-stretch relative overflow-hidden gap-6;
+    @apply p-4 lg:p-0; 
+  }
+
+  @media (min-width: 1024px) {
+    .excursions__container {
+      clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);
+    }
   }
 
   .excursions__text-block {
     @apply w-full lg:w-[35%] p-4 md:p-5 flex flex-col justify-center items-start relative z-10;
+    @apply lg:pl-30; 
   }
 
   .excursions__title {
@@ -28,11 +35,11 @@
     @apply w-6 h-6 md:w-8 md:h-8 object-contain;
   }
 
-
   .excursions__red-shape {
-    @apply w-[90%] mx-auto max-h-[250px] bg-red text-white relative z-20 block cursor-pointer transition-transform duration-300; 
-    @apply lg:w-[30%] lg:mx-0 lg:max-h-none lg:self-center lg:-ml-12; 
-    transform: skewX(-10deg);   
+    @apply bg-red text-white w-full lg:w-[30%] relative z-20;
+
+    @apply lg:-ml-12;
+    @apply lg:self-center lg:h-auto; 
   }
 
   .excursions__red-shape:hover {
@@ -43,11 +50,15 @@
     @apply outline-4 outline-offset-4 outline-accent;
   }
 
-  .excursions__red-content {
-    @apply flex flex-row items-center justify-center gap-2 p-6 h-full;
-    transform: skewX(10deg); 
-  }
+ .excursions__red-content {
+    @apply flex flex-row items-center justify-center gap-4 p-6 h-full relative z-10;
+  }  
 
+  @media (min-width: 1024px) {
+    .excursions__red-shape {
+      clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+    }
+  }
 
   .excursions__red-text {
     @apply text-[10px] md:text-xl uppercase leading-tight text-left max-w-[200px] lg:max-w-[250px];
@@ -57,12 +68,11 @@
     @apply block text-base md:text-xl font-black mt-1 mb-1;
   }
 
-  /* Правая часть с контактами */
   .excursions__contact-block {
     @apply w-full lg:w-[40%] p-6 md:p-8 flex flex-col justify-center relative z-10;
-    @apply lg:pl-12; /* Отступ от наклоненной плашки */
+    @apply lg:pl-12; 
   }
-
+  
   .excursions__contact-title {
     @apply text-grayText text-xs md:text-lg mb-1 leading-tight uppercase;
   }
@@ -86,7 +96,4 @@
   .excursions__link--phone {
     @apply bg-red hover:bg-red-700;
   }
-
-
-
 }
