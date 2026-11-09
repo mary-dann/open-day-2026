@@ -70,16 +70,18 @@
   }
 
   .hero__red-box {
-    @apply bg-red text-white p-6 md:py-8 md:pr-16 relative w-full shadow-2xl rounded-r-2xl md:rounded-none ;
+    @apply bg-red text-white p-6 md:py-8 md:pr-16 relative w-full shadow-2xl rounded-r-2xl md:rounded-none flex flex-col items-center justify-center;
     @media (min-width: 768px) {
       clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+      display: block; 
     }
   }
 
   .hero__red-box-content {
-    @apply w-full max-w-[1280px] mx-auto pr-8;
+    @apply w-full max-w-[1280px] mx-auto pr-8 flex flex-col items-center text-center;
     @media (min-width: 768px) {
-      padding-left: 14rem;
+      align-items: center; 
+      text-align: start;
     }
   }
 
